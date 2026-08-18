@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, X } from "lucide-react";
 import { useLang } from "@/contexts/language";
-import posterImg from "@/assets/hero-site.jpg";
+import posterImgAsset from "@/assets/hero-site.jpg.asset.json";
+
+const posterImg = posterImgAsset.url;
 
 /**
  * Corporate AV.

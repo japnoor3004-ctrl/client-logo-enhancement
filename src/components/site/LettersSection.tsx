@@ -4,12 +4,19 @@ import { useLang } from "@/contexts/language";
 import { useReveal } from "@/hooks/use-reveal";
 import { ImageLightbox, type LightboxItem } from "./ImageLightbox";
 
-import canadianOrder from "@/assets/press/towell-canadian-order.jpg";
-import uniscoSmelter from "@/assets/press/unisco-smelter-contract.jpg";
-import abgPipeline from "@/assets/press/abg-water-pipeline.jpg";
-import abgCity from "@/assets/press/towell-pumps-abg-city.jpg";
-import tipcoHandover from "@/assets/press/tipco-project-handover.jpg";
-import dossierAwards from "@/assets/press/dossier-awards-2015.jpg";
+import canadianOrderAsset from "@/assets/press/towell-canadian-order.jpg.asset.json";
+import uniscoSmelterAsset from "@/assets/press/unisco-smelter-contract.jpg.asset.json";
+import abgPipelineAsset from "@/assets/press/abg-water-pipeline.jpg.asset.json";
+import abgCityAsset from "@/assets/press/towell-pumps-abg-city.jpg.asset.json";
+import tipcoHandoverAsset from "@/assets/press/tipco-project-handover.jpg.asset.json";
+import dossierAwardsAsset from "@/assets/press/dossier-awards-2015.jpg.asset.json";
+
+const canadianOrder = canadianOrderAsset.url;
+const uniscoSmelter = uniscoSmelterAsset.url;
+const abgPipeline = abgPipelineAsset.url;
+const abgCity = abgCityAsset.url;
+const tipcoHandover = tipcoHandoverAsset.url;
+const dossierAwards = dossierAwardsAsset.url;
 
 /**
  * Letters, press clippings and communications supplied as image documents.

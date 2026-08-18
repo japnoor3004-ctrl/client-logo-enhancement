@@ -5,12 +5,19 @@ import { useLang } from "@/contexts/language";
 import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
-import waterPlant from "@/assets/water-plant.jpg";
-import barka from "@/assets/barka-swro-rack1.jpg";
-import liwaIrrigation from "@/assets/liwa-irrigation.jpg";
-import liwaReservoir from "@/assets/liwa-reservoir.jpg";
-import mudhaibiWater from "@/assets/mudhaibi-water.jpg";
-import sohar from "@/assets/sohar-plant.jpg";
+import waterPlantAsset from "@/assets/water-plant.jpg.asset.json";
+import barkaAsset from "@/assets/barka-swro-rack1.jpg.asset.json";
+import liwaIrrigationAsset from "@/assets/liwa-irrigation.jpg.asset.json";
+import liwaReservoirAsset from "@/assets/liwa-reservoir.jpg.asset.json";
+import mudhaibiWaterAsset from "@/assets/mudhaibi-water.jpg.asset.json";
+import soharAsset from "@/assets/sohar-plant.jpg.asset.json";
+
+const waterPlant = waterPlantAsset.url;
+const barka = barkaAsset.url;
+const liwaIrrigation = liwaIrrigationAsset.url;
+const liwaReservoir = liwaReservoirAsset.url;
+const mudhaibiWater = mudhaibiWaterAsset.url;
+const sohar = soharAsset.url;
 
 export const Route = createFileRoute("/sustainability")({
   head: () => ({

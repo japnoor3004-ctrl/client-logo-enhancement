@@ -2,7 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CompanyLayout } from "@/components/site/CompanyLayout";
 import { useLang } from "@/contexts/language";
-import heroImg from "@/assets/pipeline.jpg";
+import heroImgAsset from "@/assets/pipeline.jpg.asset.json";
+
+const heroImg = heroImgAsset.url;
 
 export const Route = createFileRoute("/tdos")({
   head: () => ({

@@ -1,11 +1,13 @@
 import { useLang } from "@/contexts/language";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
-import heroImg from "@/assets/construction.jpg";
+import heroImgAsset from "@/assets/construction.jpg.asset.json";
 import DotField from "@/components/site/DotField";
 import HseGallery from "@/components/site/HseGallery";
 
 import {
+
+const heroImg = heroImgAsset.url;
   ShieldCheck,
   HeartPulse,
   Leaf,

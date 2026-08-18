@@ -1,9 +1,16 @@
-import tccLogo from "@/assets/tcc-logo.png";
-import tdosLogo from "@/assets/tdos-logo.png";
-import nxtlevvelLogo from "@/assets/nxtlevvel-logo.png";
-import telcoLogo from "@/assets/telco-logo.png";
-import uniscoLogo from "@/assets/unisco-logo.png";
-import twoLogo from "@/assets/two-logo.png";
+import tccLogoAsset from "@/assets/tcc-logo.png.asset.json";
+import tdosLogoAsset from "@/assets/tdos-logo.png.asset.json";
+import nxtlevvelLogoAsset from "@/assets/nxtlevvel-logo.png.asset.json";
+import telcoLogoAsset from "@/assets/telco-logo.png.asset.json";
+import uniscoLogoAsset from "@/assets/unisco-logo.png.asset.json";
+import twoLogoAsset from "@/assets/two-logo.png.asset.json";
+
+const tccLogo = tccLogoAsset.url;
+const tdosLogo = tdosLogoAsset.url;
+const nxtlevvelLogo = nxtlevvelLogoAsset.url;
+const telcoLogo = telcoLogoAsset.url;
+const uniscoLogo = uniscoLogoAsset.url;
+const twoLogo = twoLogoAsset.url;
 
 /**
  * Brand marks for the group companies.

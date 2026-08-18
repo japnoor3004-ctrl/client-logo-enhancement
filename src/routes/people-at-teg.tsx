@@ -5,12 +5,19 @@ import { useLang } from "@/contexts/language";
 import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
-import teamImg from "@/assets/mudhaibi-team.jpg";
-import careersImg from "@/assets/careers.jpg";
-import hse1 from "@/assets/hse/hse-1.jpg";
-import hse4 from "@/assets/hse/hse-4.jpg";
-import hse7 from "@/assets/hse/hse-7.jpg";
-import hse11 from "@/assets/hse/hse-11.jpg";
+import teamImgAsset from "@/assets/mudhaibi-team.jpg.asset.json";
+import careersImgAsset from "@/assets/careers.jpg.asset.json";
+import hse1Asset from "@/assets/hse/hse-1.jpg.asset.json";
+import hse4Asset from "@/assets/hse/hse-4.jpg.asset.json";
+import hse7Asset from "@/assets/hse/hse-7.jpg.asset.json";
+import hse11Asset from "@/assets/hse/hse-11.jpg.asset.json";
+
+const teamImg = teamImgAsset.url;
+const careersImg = careersImgAsset.url;
+const hse1 = hse1Asset.url;
+const hse4 = hse4Asset.url;
+const hse7 = hse7Asset.url;
+const hse11 = hse11Asset.url;
 
 export const Route = createFileRoute("/people-at-teg")({
   head: () => ({
