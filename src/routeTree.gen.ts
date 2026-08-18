@@ -10,33 +10,636 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AboutUsRouteImport } from './routes/about-us'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as CertificatesRouteImport } from './routes/certificates'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as CsrRouteImport } from './routes/csr'
+import { Route as GroupCompaniesRouteImport } from './routes/group-companies'
+import { Route as HseRouteImport } from './routes/hse'
+import { Route as NxtlevvelBiochemRouteImport } from './routes/nxtlevvel-biochem'
+import { Route as PeopleAtTegRouteImport } from './routes/people-at-teg'
+import { Route as ProductsServicesRouteImport } from './routes/products-services'
+import { Route as SearchRouteImport } from './routes/search'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SustainabilityRouteImport } from './routes/sustainability'
+import { Route as TccRouteImport } from './routes/tcc'
+import { Route as TdosRouteImport } from './routes/tdos'
+import { Route as TegAbuDhabiRouteImport } from './routes/teg-abu-dhabi'
+import { Route as TegKuwaitRouteImport } from './routes/teg-kuwait'
+import { Route as TegQatarRouteImport } from './routes/teg-qatar'
+import { Route as TeilRouteImport } from './routes/teil'
+import { Route as TelcoRouteImport } from './routes/telco'
+import { Route as TescoRouteImport } from './routes/tesco'
+import { Route as TipcoRouteImport } from './routes/tipco'
+import { Route as TwoRouteImport } from './routes/two'
+import { Route as UniscoRouteImport } from './routes/unisco'
+import { Route as VendorRegistrationRouteImport } from './routes/vendor-registration'
+import { Route as AuthenticatedAdminRouteRouteImport } from './routes/_authenticated/admin/route'
+import { Route as CareersIndexRouteImport } from './routes/careers.index'
+import { Route as CareersSlugRouteImport } from './routes/careers.$slug'
+import { Route as MediaIndexRouteImport } from './routes/media.index'
+import { Route as MediaSlugRouteImport } from './routes/media.$slug'
+import { Route as MediaGalleryRouteImport } from './routes/media.gallery'
+import { Route as ProjectsIndexRouteImport } from './routes/projects.index'
+import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
+import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin/index'
+import { Route as AuthenticatedAdminApplicationsRouteImport } from './routes/_authenticated/admin/applications'
+import { Route as AuthenticatedAdminCareersRouteImport } from './routes/_authenticated/admin/careers'
+import { Route as AuthenticatedAdminCertificatesRouteImport } from './routes/_authenticated/admin/certificates'
+import { Route as AuthenticatedAdminClientsRouteImport } from './routes/_authenticated/admin/clients'
+import { Route as AuthenticatedAdminCompaniesRouteImport } from './routes/_authenticated/admin/companies'
+import { Route as AuthenticatedAdminEnquiriesRouteImport } from './routes/_authenticated/admin/enquiries'
+import { Route as AuthenticatedAdminGalleryRouteImport } from './routes/_authenticated/admin/gallery'
+import { Route as AuthenticatedAdminNewsRouteImport } from './routes/_authenticated/admin/news'
+import { Route as AuthenticatedAdminProductsRouteImport } from './routes/_authenticated/admin/products'
+import { Route as AuthenticatedAdminProjectsRouteImport } from './routes/_authenticated/admin/projects'
+import { Route as AuthenticatedAdminSeoRouteImport } from './routes/_authenticated/admin/seo'
+import { Route as AuthenticatedAdminStatsRouteImport } from './routes/_authenticated/admin/stats'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsRoute = AboutUsRouteImport.update({
+  id: '/about-us',
+  path: '/about-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthRoute = AuthRouteImport.update({
+  id: '/auth',
+  path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CertificatesRoute = CertificatesRouteImport.update({
+  id: '/certificates',
+  path: '/certificates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CsrRoute = CsrRouteImport.update({
+  id: '/csr',
+  path: '/csr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GroupCompaniesRoute = GroupCompaniesRouteImport.update({
+  id: '/group-companies',
+  path: '/group-companies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HseRoute = HseRouteImport.update({
+  id: '/hse',
+  path: '/hse',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NxtlevvelBiochemRoute = NxtlevvelBiochemRouteImport.update({
+  id: '/nxtlevvel-biochem',
+  path: '/nxtlevvel-biochem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeopleAtTegRoute = PeopleAtTegRouteImport.update({
+  id: '/people-at-teg',
+  path: '/people-at-teg',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsServicesRoute = ProductsServicesRouteImport.update({
+  id: '/products-services',
+  path: '/products-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SustainabilityRoute = SustainabilityRouteImport.update({
+  id: '/sustainability',
+  path: '/sustainability',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TccRoute = TccRouteImport.update({
+  id: '/tcc',
+  path: '/tcc',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TdosRoute = TdosRouteImport.update({
+  id: '/tdos',
+  path: '/tdos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TegAbuDhabiRoute = TegAbuDhabiRouteImport.update({
+  id: '/teg-abu-dhabi',
+  path: '/teg-abu-dhabi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TegKuwaitRoute = TegKuwaitRouteImport.update({
+  id: '/teg-kuwait',
+  path: '/teg-kuwait',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TegQatarRoute = TegQatarRouteImport.update({
+  id: '/teg-qatar',
+  path: '/teg-qatar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeilRoute = TeilRouteImport.update({
+  id: '/teil',
+  path: '/teil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TelcoRoute = TelcoRouteImport.update({
+  id: '/telco',
+  path: '/telco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TescoRoute = TescoRouteImport.update({
+  id: '/tesco',
+  path: '/tesco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TipcoRoute = TipcoRouteImport.update({
+  id: '/tipco',
+  path: '/tipco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TwoRoute = TwoRouteImport.update({
+  id: '/two',
+  path: '/two',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UniscoRoute = UniscoRouteImport.update({
+  id: '/unisco',
+  path: '/unisco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VendorRegistrationRoute = VendorRegistrationRouteImport.update({
+  id: '/vendor-registration',
+  path: '/vendor-registration',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedAdminRouteRoute = AuthenticatedAdminRouteRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const CareersIndexRoute = CareersIndexRouteImport.update({
+  id: '/careers/',
+  path: '/careers/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersSlugRoute = CareersSlugRouteImport.update({
+  id: '/careers/$slug',
+  path: '/careers/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaIndexRoute = MediaIndexRouteImport.update({
+  id: '/media/',
+  path: '/media/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaSlugRoute = MediaSlugRouteImport.update({
+  id: '/media/$slug',
+  path: '/media/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MediaGalleryRoute = MediaGalleryRouteImport.update({
+  id: '/media/gallery',
+  path: '/media/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsIndexRoute = ProjectsIndexRouteImport.update({
+  id: '/projects/',
+  path: '/projects/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
+  id: '/projects/$slug',
+  path: '/projects/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AuthenticatedAdminRouteRoute,
+} as any)
+const AuthenticatedAdminApplicationsRoute =
+  AuthenticatedAdminApplicationsRouteImport.update({
+    id: '/applications',
+    path: '/applications',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminCareersRoute =
+  AuthenticatedAdminCareersRouteImport.update({
+    id: '/careers',
+    path: '/careers',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminCertificatesRoute =
+  AuthenticatedAdminCertificatesRouteImport.update({
+    id: '/certificates',
+    path: '/certificates',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminClientsRoute =
+  AuthenticatedAdminClientsRouteImport.update({
+    id: '/clients',
+    path: '/clients',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminCompaniesRoute =
+  AuthenticatedAdminCompaniesRouteImport.update({
+    id: '/companies',
+    path: '/companies',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminEnquiriesRoute =
+  AuthenticatedAdminEnquiriesRouteImport.update({
+    id: '/enquiries',
+    path: '/enquiries',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminGalleryRoute =
+  AuthenticatedAdminGalleryRouteImport.update({
+    id: '/gallery',
+    path: '/gallery',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminNewsRoute = AuthenticatedAdminNewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => AuthenticatedAdminRouteRoute,
+} as any)
+const AuthenticatedAdminProductsRoute =
+  AuthenticatedAdminProductsRouteImport.update({
+    id: '/products',
+    path: '/products',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminProjectsRoute =
+  AuthenticatedAdminProjectsRouteImport.update({
+    id: '/projects',
+    path: '/projects',
+    getParentRoute: () => AuthenticatedAdminRouteRoute,
+  } as any)
+const AuthenticatedAdminSeoRoute = AuthenticatedAdminSeoRouteImport.update({
+  id: '/seo',
+  path: '/seo',
+  getParentRoute: () => AuthenticatedAdminRouteRoute,
+} as any)
+const AuthenticatedAdminStatsRoute = AuthenticatedAdminStatsRouteImport.update({
+  id: '/stats',
+  path: '/stats',
+  getParentRoute: () => AuthenticatedAdminRouteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about-us': typeof AboutUsRoute
+  '/auth': typeof AuthRoute
+  '/certificates': typeof CertificatesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/csr': typeof CsrRoute
+  '/group-companies': typeof GroupCompaniesRoute
+  '/hse': typeof HseRoute
+  '/nxtlevvel-biochem': typeof NxtlevvelBiochemRoute
+  '/people-at-teg': typeof PeopleAtTegRoute
+  '/products-services': typeof ProductsServicesRoute
+  '/search': typeof SearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sustainability': typeof SustainabilityRoute
+  '/tcc': typeof TccRoute
+  '/tdos': typeof TdosRoute
+  '/teg-abu-dhabi': typeof TegAbuDhabiRoute
+  '/teg-kuwait': typeof TegKuwaitRoute
+  '/teg-qatar': typeof TegQatarRoute
+  '/teil': typeof TeilRoute
+  '/telco': typeof TelcoRoute
+  '/tesco': typeof TescoRoute
+  '/tipco': typeof TipcoRoute
+  '/two': typeof TwoRoute
+  '/unisco': typeof UniscoRoute
+  '/vendor-registration': typeof VendorRegistrationRoute
+  '/admin': typeof AuthenticatedAdminRouteRouteWithChildren
+  '/careers/$slug': typeof CareersSlugRoute
+  '/media/$slug': typeof MediaSlugRoute
+  '/media/gallery': typeof MediaGalleryRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
+  '/careers/': typeof CareersIndexRoute
+  '/media/': typeof MediaIndexRoute
+  '/projects/': typeof ProjectsIndexRoute
+  '/admin/applications': typeof AuthenticatedAdminApplicationsRoute
+  '/admin/careers': typeof AuthenticatedAdminCareersRoute
+  '/admin/certificates': typeof AuthenticatedAdminCertificatesRoute
+  '/admin/clients': typeof AuthenticatedAdminClientsRoute
+  '/admin/companies': typeof AuthenticatedAdminCompaniesRoute
+  '/admin/enquiries': typeof AuthenticatedAdminEnquiriesRoute
+  '/admin/gallery': typeof AuthenticatedAdminGalleryRoute
+  '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/products': typeof AuthenticatedAdminProductsRoute
+  '/admin/projects': typeof AuthenticatedAdminProjectsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
+  '/admin/stats': typeof AuthenticatedAdminStatsRoute
+  '/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about-us': typeof AboutUsRoute
+  '/auth': typeof AuthRoute
+  '/certificates': typeof CertificatesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/csr': typeof CsrRoute
+  '/group-companies': typeof GroupCompaniesRoute
+  '/hse': typeof HseRoute
+  '/nxtlevvel-biochem': typeof NxtlevvelBiochemRoute
+  '/people-at-teg': typeof PeopleAtTegRoute
+  '/products-services': typeof ProductsServicesRoute
+  '/search': typeof SearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sustainability': typeof SustainabilityRoute
+  '/tcc': typeof TccRoute
+  '/tdos': typeof TdosRoute
+  '/teg-abu-dhabi': typeof TegAbuDhabiRoute
+  '/teg-kuwait': typeof TegKuwaitRoute
+  '/teg-qatar': typeof TegQatarRoute
+  '/teil': typeof TeilRoute
+  '/telco': typeof TelcoRoute
+  '/tesco': typeof TescoRoute
+  '/tipco': typeof TipcoRoute
+  '/two': typeof TwoRoute
+  '/unisco': typeof UniscoRoute
+  '/vendor-registration': typeof VendorRegistrationRoute
+  '/careers/$slug': typeof CareersSlugRoute
+  '/media/$slug': typeof MediaSlugRoute
+  '/media/gallery': typeof MediaGalleryRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
+  '/careers': typeof CareersIndexRoute
+  '/media': typeof MediaIndexRoute
+  '/projects': typeof ProjectsIndexRoute
+  '/admin/applications': typeof AuthenticatedAdminApplicationsRoute
+  '/admin/careers': typeof AuthenticatedAdminCareersRoute
+  '/admin/certificates': typeof AuthenticatedAdminCertificatesRoute
+  '/admin/clients': typeof AuthenticatedAdminClientsRoute
+  '/admin/companies': typeof AuthenticatedAdminCompaniesRoute
+  '/admin/enquiries': typeof AuthenticatedAdminEnquiriesRoute
+  '/admin/gallery': typeof AuthenticatedAdminGalleryRoute
+  '/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/admin/products': typeof AuthenticatedAdminProductsRoute
+  '/admin/projects': typeof AuthenticatedAdminProjectsRoute
+  '/admin/seo': typeof AuthenticatedAdminSeoRoute
+  '/admin/stats': typeof AuthenticatedAdminStatsRoute
+  '/admin': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
+  '/about-us': typeof AboutUsRoute
+  '/auth': typeof AuthRoute
+  '/certificates': typeof CertificatesRoute
+  '/contact-us': typeof ContactUsRoute
+  '/csr': typeof CsrRoute
+  '/group-companies': typeof GroupCompaniesRoute
+  '/hse': typeof HseRoute
+  '/nxtlevvel-biochem': typeof NxtlevvelBiochemRoute
+  '/people-at-teg': typeof PeopleAtTegRoute
+  '/products-services': typeof ProductsServicesRoute
+  '/search': typeof SearchRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sustainability': typeof SustainabilityRoute
+  '/tcc': typeof TccRoute
+  '/tdos': typeof TdosRoute
+  '/teg-abu-dhabi': typeof TegAbuDhabiRoute
+  '/teg-kuwait': typeof TegKuwaitRoute
+  '/teg-qatar': typeof TegQatarRoute
+  '/teil': typeof TeilRoute
+  '/telco': typeof TelcoRoute
+  '/tesco': typeof TescoRoute
+  '/tipco': typeof TipcoRoute
+  '/two': typeof TwoRoute
+  '/unisco': typeof UniscoRoute
+  '/vendor-registration': typeof VendorRegistrationRoute
+  '/_authenticated/admin': typeof AuthenticatedAdminRouteRouteWithChildren
+  '/careers/$slug': typeof CareersSlugRoute
+  '/media/$slug': typeof MediaSlugRoute
+  '/media/gallery': typeof MediaGalleryRoute
+  '/projects/$slug': typeof ProjectsSlugRoute
+  '/careers/': typeof CareersIndexRoute
+  '/media/': typeof MediaIndexRoute
+  '/projects/': typeof ProjectsIndexRoute
+  '/_authenticated/admin/applications': typeof AuthenticatedAdminApplicationsRoute
+  '/_authenticated/admin/careers': typeof AuthenticatedAdminCareersRoute
+  '/_authenticated/admin/certificates': typeof AuthenticatedAdminCertificatesRoute
+  '/_authenticated/admin/clients': typeof AuthenticatedAdminClientsRoute
+  '/_authenticated/admin/companies': typeof AuthenticatedAdminCompaniesRoute
+  '/_authenticated/admin/enquiries': typeof AuthenticatedAdminEnquiriesRoute
+  '/_authenticated/admin/gallery': typeof AuthenticatedAdminGalleryRoute
+  '/_authenticated/admin/news': typeof AuthenticatedAdminNewsRoute
+  '/_authenticated/admin/products': typeof AuthenticatedAdminProductsRoute
+  '/_authenticated/admin/projects': typeof AuthenticatedAdminProjectsRoute
+  '/_authenticated/admin/seo': typeof AuthenticatedAdminSeoRoute
+  '/_authenticated/admin/stats': typeof AuthenticatedAdminStatsRoute
+  '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about-us'
+    | '/auth'
+    | '/certificates'
+    | '/contact-us'
+    | '/csr'
+    | '/group-companies'
+    | '/hse'
+    | '/nxtlevvel-biochem'
+    | '/people-at-teg'
+    | '/products-services'
+    | '/search'
+    | '/sitemap.xml'
+    | '/sustainability'
+    | '/tcc'
+    | '/tdos'
+    | '/teg-abu-dhabi'
+    | '/teg-kuwait'
+    | '/teg-qatar'
+    | '/teil'
+    | '/telco'
+    | '/tesco'
+    | '/tipco'
+    | '/two'
+    | '/unisco'
+    | '/vendor-registration'
+    | '/admin'
+    | '/careers/$slug'
+    | '/media/$slug'
+    | '/media/gallery'
+    | '/projects/$slug'
+    | '/careers/'
+    | '/media/'
+    | '/projects/'
+    | '/admin/applications'
+    | '/admin/careers'
+    | '/admin/certificates'
+    | '/admin/clients'
+    | '/admin/companies'
+    | '/admin/enquiries'
+    | '/admin/gallery'
+    | '/admin/news'
+    | '/admin/products'
+    | '/admin/projects'
+    | '/admin/seo'
+    | '/admin/stats'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about-us'
+    | '/auth'
+    | '/certificates'
+    | '/contact-us'
+    | '/csr'
+    | '/group-companies'
+    | '/hse'
+    | '/nxtlevvel-biochem'
+    | '/people-at-teg'
+    | '/products-services'
+    | '/search'
+    | '/sitemap.xml'
+    | '/sustainability'
+    | '/tcc'
+    | '/tdos'
+    | '/teg-abu-dhabi'
+    | '/teg-kuwait'
+    | '/teg-qatar'
+    | '/teil'
+    | '/telco'
+    | '/tesco'
+    | '/tipco'
+    | '/two'
+    | '/unisco'
+    | '/vendor-registration'
+    | '/careers/$slug'
+    | '/media/$slug'
+    | '/media/gallery'
+    | '/projects/$slug'
+    | '/careers'
+    | '/media'
+    | '/projects'
+    | '/admin/applications'
+    | '/admin/careers'
+    | '/admin/certificates'
+    | '/admin/clients'
+    | '/admin/companies'
+    | '/admin/enquiries'
+    | '/admin/gallery'
+    | '/admin/news'
+    | '/admin/products'
+    | '/admin/projects'
+    | '/admin/seo'
+    | '/admin/stats'
+    | '/admin'
+  id:
+    | '__root__'
+    | '/'
+    | '/_authenticated'
+    | '/about-us'
+    | '/auth'
+    | '/certificates'
+    | '/contact-us'
+    | '/csr'
+    | '/group-companies'
+    | '/hse'
+    | '/nxtlevvel-biochem'
+    | '/people-at-teg'
+    | '/products-services'
+    | '/search'
+    | '/sitemap.xml'
+    | '/sustainability'
+    | '/tcc'
+    | '/tdos'
+    | '/teg-abu-dhabi'
+    | '/teg-kuwait'
+    | '/teg-qatar'
+    | '/teil'
+    | '/telco'
+    | '/tesco'
+    | '/tipco'
+    | '/two'
+    | '/unisco'
+    | '/vendor-registration'
+    | '/_authenticated/admin'
+    | '/careers/$slug'
+    | '/media/$slug'
+    | '/media/gallery'
+    | '/projects/$slug'
+    | '/careers/'
+    | '/media/'
+    | '/projects/'
+    | '/_authenticated/admin/applications'
+    | '/_authenticated/admin/careers'
+    | '/_authenticated/admin/certificates'
+    | '/_authenticated/admin/clients'
+    | '/_authenticated/admin/companies'
+    | '/_authenticated/admin/enquiries'
+    | '/_authenticated/admin/gallery'
+    | '/_authenticated/admin/news'
+    | '/_authenticated/admin/products'
+    | '/_authenticated/admin/projects'
+    | '/_authenticated/admin/seo'
+    | '/_authenticated/admin/stats'
+    | '/_authenticated/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
+  AboutUsRoute: typeof AboutUsRoute
+  AuthRoute: typeof AuthRoute
+  CertificatesRoute: typeof CertificatesRoute
+  ContactUsRoute: typeof ContactUsRoute
+  CsrRoute: typeof CsrRoute
+  GroupCompaniesRoute: typeof GroupCompaniesRoute
+  HseRoute: typeof HseRoute
+  NxtlevvelBiochemRoute: typeof NxtlevvelBiochemRoute
+  PeopleAtTegRoute: typeof PeopleAtTegRoute
+  ProductsServicesRoute: typeof ProductsServicesRoute
+  SearchRoute: typeof SearchRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SustainabilityRoute: typeof SustainabilityRoute
+  TccRoute: typeof TccRoute
+  TdosRoute: typeof TdosRoute
+  TegAbuDhabiRoute: typeof TegAbuDhabiRoute
+  TegKuwaitRoute: typeof TegKuwaitRoute
+  TegQatarRoute: typeof TegQatarRoute
+  TeilRoute: typeof TeilRoute
+  TelcoRoute: typeof TelcoRoute
+  TescoRoute: typeof TescoRoute
+  TipcoRoute: typeof TipcoRoute
+  TwoRoute: typeof TwoRoute
+  UniscoRoute: typeof UniscoRoute
+  VendorRegistrationRoute: typeof VendorRegistrationRoute
+  CareersSlugRoute: typeof CareersSlugRoute
+  MediaSlugRoute: typeof MediaSlugRoute
+  MediaGalleryRoute: typeof MediaGalleryRoute
+  ProjectsSlugRoute: typeof ProjectsSlugRoute
+  CareersIndexRoute: typeof CareersIndexRoute
+  MediaIndexRoute: typeof MediaIndexRoute
+  ProjectsIndexRoute: typeof ProjectsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +651,422 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us': {
+      id: '/about-us'
+      path: '/about-us'
+      fullPath: '/about-us'
+      preLoaderRoute: typeof AboutUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/certificates': {
+      id: '/certificates'
+      path: '/certificates'
+      fullPath: '/certificates'
+      preLoaderRoute: typeof CertificatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/csr': {
+      id: '/csr'
+      path: '/csr'
+      fullPath: '/csr'
+      preLoaderRoute: typeof CsrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/group-companies': {
+      id: '/group-companies'
+      path: '/group-companies'
+      fullPath: '/group-companies'
+      preLoaderRoute: typeof GroupCompaniesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hse': {
+      id: '/hse'
+      path: '/hse'
+      fullPath: '/hse'
+      preLoaderRoute: typeof HseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nxtlevvel-biochem': {
+      id: '/nxtlevvel-biochem'
+      path: '/nxtlevvel-biochem'
+      fullPath: '/nxtlevvel-biochem'
+      preLoaderRoute: typeof NxtlevvelBiochemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/people-at-teg': {
+      id: '/people-at-teg'
+      path: '/people-at-teg'
+      fullPath: '/people-at-teg'
+      preLoaderRoute: typeof PeopleAtTegRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products-services': {
+      id: '/products-services'
+      path: '/products-services'
+      fullPath: '/products-services'
+      preLoaderRoute: typeof ProductsServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sustainability': {
+      id: '/sustainability'
+      path: '/sustainability'
+      fullPath: '/sustainability'
+      preLoaderRoute: typeof SustainabilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tcc': {
+      id: '/tcc'
+      path: '/tcc'
+      fullPath: '/tcc'
+      preLoaderRoute: typeof TccRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tdos': {
+      id: '/tdos'
+      path: '/tdos'
+      fullPath: '/tdos'
+      preLoaderRoute: typeof TdosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teg-abu-dhabi': {
+      id: '/teg-abu-dhabi'
+      path: '/teg-abu-dhabi'
+      fullPath: '/teg-abu-dhabi'
+      preLoaderRoute: typeof TegAbuDhabiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teg-kuwait': {
+      id: '/teg-kuwait'
+      path: '/teg-kuwait'
+      fullPath: '/teg-kuwait'
+      preLoaderRoute: typeof TegKuwaitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teg-qatar': {
+      id: '/teg-qatar'
+      path: '/teg-qatar'
+      fullPath: '/teg-qatar'
+      preLoaderRoute: typeof TegQatarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/teil': {
+      id: '/teil'
+      path: '/teil'
+      fullPath: '/teil'
+      preLoaderRoute: typeof TeilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/telco': {
+      id: '/telco'
+      path: '/telco'
+      fullPath: '/telco'
+      preLoaderRoute: typeof TelcoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tesco': {
+      id: '/tesco'
+      path: '/tesco'
+      fullPath: '/tesco'
+      preLoaderRoute: typeof TescoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tipco': {
+      id: '/tipco'
+      path: '/tipco'
+      fullPath: '/tipco'
+      preLoaderRoute: typeof TipcoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/two': {
+      id: '/two'
+      path: '/two'
+      fullPath: '/two'
+      preLoaderRoute: typeof TwoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unisco': {
+      id: '/unisco'
+      path: '/unisco'
+      fullPath: '/unisco'
+      preLoaderRoute: typeof UniscoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vendor-registration': {
+      id: '/vendor-registration'
+      path: '/vendor-registration'
+      fullPath: '/vendor-registration'
+      preLoaderRoute: typeof VendorRegistrationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/admin': {
+      id: '/_authenticated/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AuthenticatedAdminRouteRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/careers/': {
+      id: '/careers/'
+      path: '/careers'
+      fullPath: '/careers/'
+      preLoaderRoute: typeof CareersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers/$slug': {
+      id: '/careers/$slug'
+      path: '/careers/$slug'
+      fullPath: '/careers/$slug'
+      preLoaderRoute: typeof CareersSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/': {
+      id: '/media/'
+      path: '/media'
+      fullPath: '/media/'
+      preLoaderRoute: typeof MediaIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/$slug': {
+      id: '/media/$slug'
+      path: '/media/$slug'
+      fullPath: '/media/$slug'
+      preLoaderRoute: typeof MediaSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/media/gallery': {
+      id: '/media/gallery'
+      path: '/media/gallery'
+      fullPath: '/media/gallery'
+      preLoaderRoute: typeof MediaGalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/': {
+      id: '/projects/'
+      path: '/projects'
+      fullPath: '/projects/'
+      preLoaderRoute: typeof ProjectsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/$slug': {
+      id: '/projects/$slug'
+      path: '/projects/$slug'
+      fullPath: '/projects/$slug'
+      preLoaderRoute: typeof ProjectsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/admin/': {
+      id: '/_authenticated/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/applications': {
+      id: '/_authenticated/admin/applications'
+      path: '/applications'
+      fullPath: '/admin/applications'
+      preLoaderRoute: typeof AuthenticatedAdminApplicationsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/careers': {
+      id: '/_authenticated/admin/careers'
+      path: '/careers'
+      fullPath: '/admin/careers'
+      preLoaderRoute: typeof AuthenticatedAdminCareersRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/certificates': {
+      id: '/_authenticated/admin/certificates'
+      path: '/certificates'
+      fullPath: '/admin/certificates'
+      preLoaderRoute: typeof AuthenticatedAdminCertificatesRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/clients': {
+      id: '/_authenticated/admin/clients'
+      path: '/clients'
+      fullPath: '/admin/clients'
+      preLoaderRoute: typeof AuthenticatedAdminClientsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/companies': {
+      id: '/_authenticated/admin/companies'
+      path: '/companies'
+      fullPath: '/admin/companies'
+      preLoaderRoute: typeof AuthenticatedAdminCompaniesRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/enquiries': {
+      id: '/_authenticated/admin/enquiries'
+      path: '/enquiries'
+      fullPath: '/admin/enquiries'
+      preLoaderRoute: typeof AuthenticatedAdminEnquiriesRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/gallery': {
+      id: '/_authenticated/admin/gallery'
+      path: '/gallery'
+      fullPath: '/admin/gallery'
+      preLoaderRoute: typeof AuthenticatedAdminGalleryRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/news': {
+      id: '/_authenticated/admin/news'
+      path: '/news'
+      fullPath: '/admin/news'
+      preLoaderRoute: typeof AuthenticatedAdminNewsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/products': {
+      id: '/_authenticated/admin/products'
+      path: '/products'
+      fullPath: '/admin/products'
+      preLoaderRoute: typeof AuthenticatedAdminProductsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/projects': {
+      id: '/_authenticated/admin/projects'
+      path: '/projects'
+      fullPath: '/admin/projects'
+      preLoaderRoute: typeof AuthenticatedAdminProjectsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/seo': {
+      id: '/_authenticated/admin/seo'
+      path: '/seo'
+      fullPath: '/admin/seo'
+      preLoaderRoute: typeof AuthenticatedAdminSeoRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
+    '/_authenticated/admin/stats': {
+      id: '/_authenticated/admin/stats'
+      path: '/stats'
+      fullPath: '/admin/stats'
+      preLoaderRoute: typeof AuthenticatedAdminStatsRouteImport
+      parentRoute: typeof AuthenticatedAdminRouteRoute
+    }
   }
 }
 
+interface AuthenticatedAdminRouteRouteChildren {
+  AuthenticatedAdminApplicationsRoute: typeof AuthenticatedAdminApplicationsRoute
+  AuthenticatedAdminCareersRoute: typeof AuthenticatedAdminCareersRoute
+  AuthenticatedAdminCertificatesRoute: typeof AuthenticatedAdminCertificatesRoute
+  AuthenticatedAdminClientsRoute: typeof AuthenticatedAdminClientsRoute
+  AuthenticatedAdminCompaniesRoute: typeof AuthenticatedAdminCompaniesRoute
+  AuthenticatedAdminEnquiriesRoute: typeof AuthenticatedAdminEnquiriesRoute
+  AuthenticatedAdminGalleryRoute: typeof AuthenticatedAdminGalleryRoute
+  AuthenticatedAdminNewsRoute: typeof AuthenticatedAdminNewsRoute
+  AuthenticatedAdminProductsRoute: typeof AuthenticatedAdminProductsRoute
+  AuthenticatedAdminProjectsRoute: typeof AuthenticatedAdminProjectsRoute
+  AuthenticatedAdminSeoRoute: typeof AuthenticatedAdminSeoRoute
+  AuthenticatedAdminStatsRoute: typeof AuthenticatedAdminStatsRoute
+  AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
+}
+
+const AuthenticatedAdminRouteRouteChildren: AuthenticatedAdminRouteRouteChildren =
+  {
+    AuthenticatedAdminApplicationsRoute: AuthenticatedAdminApplicationsRoute,
+    AuthenticatedAdminCareersRoute: AuthenticatedAdminCareersRoute,
+    AuthenticatedAdminCertificatesRoute: AuthenticatedAdminCertificatesRoute,
+    AuthenticatedAdminClientsRoute: AuthenticatedAdminClientsRoute,
+    AuthenticatedAdminCompaniesRoute: AuthenticatedAdminCompaniesRoute,
+    AuthenticatedAdminEnquiriesRoute: AuthenticatedAdminEnquiriesRoute,
+    AuthenticatedAdminGalleryRoute: AuthenticatedAdminGalleryRoute,
+    AuthenticatedAdminNewsRoute: AuthenticatedAdminNewsRoute,
+    AuthenticatedAdminProductsRoute: AuthenticatedAdminProductsRoute,
+    AuthenticatedAdminProjectsRoute: AuthenticatedAdminProjectsRoute,
+    AuthenticatedAdminSeoRoute: AuthenticatedAdminSeoRoute,
+    AuthenticatedAdminStatsRoute: AuthenticatedAdminStatsRoute,
+    AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,
+  }
+
+const AuthenticatedAdminRouteRouteWithChildren =
+  AuthenticatedAdminRouteRoute._addFileChildren(
+    AuthenticatedAdminRouteRouteChildren,
+  )
+
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAdminRouteRoute: typeof AuthenticatedAdminRouteRouteWithChildren
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAdminRouteRoute: AuthenticatedAdminRouteRouteWithChildren,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
+  AboutUsRoute: AboutUsRoute,
+  AuthRoute: AuthRoute,
+  CertificatesRoute: CertificatesRoute,
+  ContactUsRoute: ContactUsRoute,
+  CsrRoute: CsrRoute,
+  GroupCompaniesRoute: GroupCompaniesRoute,
+  HseRoute: HseRoute,
+  NxtlevvelBiochemRoute: NxtlevvelBiochemRoute,
+  PeopleAtTegRoute: PeopleAtTegRoute,
+  ProductsServicesRoute: ProductsServicesRoute,
+  SearchRoute: SearchRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SustainabilityRoute: SustainabilityRoute,
+  TccRoute: TccRoute,
+  TdosRoute: TdosRoute,
+  TegAbuDhabiRoute: TegAbuDhabiRoute,
+  TegKuwaitRoute: TegKuwaitRoute,
+  TegQatarRoute: TegQatarRoute,
+  TeilRoute: TeilRoute,
+  TelcoRoute: TelcoRoute,
+  TescoRoute: TescoRoute,
+  TipcoRoute: TipcoRoute,
+  TwoRoute: TwoRoute,
+  UniscoRoute: UniscoRoute,
+  VendorRegistrationRoute: VendorRegistrationRoute,
+  CareersSlugRoute: CareersSlugRoute,
+  MediaSlugRoute: MediaSlugRoute,
+  MediaGalleryRoute: MediaGalleryRoute,
+  ProjectsSlugRoute: ProjectsSlugRoute,
+  CareersIndexRoute: CareersIndexRoute,
+  MediaIndexRoute: MediaIndexRoute,
+  ProjectsIndexRoute: ProjectsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

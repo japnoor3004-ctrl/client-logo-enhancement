@@ -1,0 +1,27 @@
+.scroll-stack-section {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-stack-item {
+  position: sticky;
+  width: 100%;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.scroll-stack-card {
+  width: 100%;
+  box-sizing: border-box;
+  transform-origin: top center;
+  will-change: transform;
+}
+
+.scroll-stack-spacer {
+  height: 30vh;
+  width: 100%;
+  pointer-events: none;
+}
