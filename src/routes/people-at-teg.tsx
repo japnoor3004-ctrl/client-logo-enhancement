@@ -5,19 +5,19 @@ import { useLang } from "@/contexts/language";
 import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
-import teamImgAsset from "@/assets/mudhaibi-team.jpg.asset.json";
-import careersImgAsset from "@/assets/careers.jpg.asset.json";
-import hse1Asset from "@/assets/hse/hse-1.jpg.asset.json";
-import hse4Asset from "@/assets/hse/hse-4.jpg.asset.json";
-import hse7Asset from "@/assets/hse/hse-7.jpg.asset.json";
-import hse11Asset from "@/assets/hse/hse-11.jpg.asset.json";
+import teamImg__ptr from "@/assets/mudhaibi-team.jpg.asset.json";
+import careersImg__ptr from "@/assets/careers.jpg.asset.json";
+import hse1__ptr from "@/assets/hse/hse-1.jpg.asset.json";
+import hse4__ptr from "@/assets/hse/hse-4.jpg.asset.json";
+import hse7__ptr from "@/assets/hse/hse-7.jpg.asset.json";
+import hse11__ptr from "@/assets/hse/hse-11.jpg.asset.json";
 
-const teamImg = teamImgAsset.url;
-const careersImg = careersImgAsset.url;
-const hse1 = hse1Asset.url;
-const hse4 = hse4Asset.url;
-const hse7 = hse7Asset.url;
-const hse11 = hse11Asset.url;
+const teamImg = teamImg__ptr.url;
+const careersImg = careersImg__ptr.url;
+const hse1 = hse1__ptr.url;
+const hse4 = hse4__ptr.url;
+const hse7 = hse7__ptr.url;
+const hse11 = hse11__ptr.url;
 
 export const Route = createFileRoute("/people-at-teg")({
   head: () => ({

@@ -26,27 +26,27 @@ import SplitText from "@/components/site/SplitText";
 
 // Hero background uses GridMotion with the bundled project photography.
 
-import heroSiteAsset from "@/assets/hero-site.jpg.asset.json";
-import constructionAsset from "@/assets/construction.jpg.asset.json";
-import refineryAsset from "@/assets/refinery.jpg.asset.json";
-import fabricationAsset from "@/assets/fabrication.jpg.asset.json";
-import fabrication2Asset from "@/assets/fabrication2.jpg.asset.json";
-import pipelineAsset from "@/assets/pipeline.jpg.asset.json";
-import electricalAsset from "@/assets/electrical.jpg.asset.json";
-import waterPlantAsset from "@/assets/water-plant.jpg.asset.json";
+import heroSite__ptr from "@/assets/hero-site.jpg.asset.json";
+import construction__ptr from "@/assets/construction.jpg.asset.json";
+import refinery__ptr from "@/assets/refinery.jpg.asset.json";
+import fabrication__ptr from "@/assets/fabrication.jpg.asset.json";
+import fabrication2__ptr from "@/assets/fabrication2.jpg.asset.json";
+import pipeline__ptr from "@/assets/pipeline.jpg.asset.json";
+import electrical__ptr from "@/assets/electrical.jpg.asset.json";
+import waterPlant__ptr from "@/assets/water-plant.jpg.asset.json";
 
 import GridMotion from "@/components/site/GridMotion";
 import DotField from "@/components/site/DotField";
 import { StatStrip } from "@/components/site/StatStrip";
 
-const heroSite = heroSiteAsset.url;
-const construction = constructionAsset.url;
-const refinery = refineryAsset.url;
-const fabrication = fabricationAsset.url;
-const fabrication2 = fabrication2Asset.url;
-const pipeline = pipelineAsset.url;
-const electrical = electricalAsset.url;
-const waterPlant = waterPlantAsset.url;
+const heroSite = heroSite__ptr.url;
+const construction = construction__ptr.url;
+const refinery = refinery__ptr.url;
+const fabrication = fabrication__ptr.url;
+const fabrication2 = fabrication2__ptr.url;
+const pipeline = pipeline__ptr.url;
+const electrical = electrical__ptr.url;
+const waterPlant = waterPlant__ptr.url;
 
 // ─── GridMotion hero tiles ───
 // Real Towell project photography (bundled assets, hashed + cached by Vite).

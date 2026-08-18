@@ -1,16 +1,16 @@
-import tccLogoAsset from "@/assets/tcc-logo.png.asset.json";
-import tdosLogoAsset from "@/assets/tdos-logo.png.asset.json";
-import nxtlevvelLogoAsset from "@/assets/nxtlevvel-logo.png.asset.json";
-import telcoLogoAsset from "@/assets/telco-logo.png.asset.json";
-import uniscoLogoAsset from "@/assets/unisco-logo.png.asset.json";
-import twoLogoAsset from "@/assets/two-logo.png.asset.json";
+import tccLogo__ptr from "@/assets/tcc-logo.png.asset.json";
+import tdosLogo__ptr from "@/assets/tdos-logo.png.asset.json";
+import nxtlevvelLogo__ptr from "@/assets/nxtlevvel-logo.png.asset.json";
+import telcoLogo__ptr from "@/assets/telco-logo.png.asset.json";
+import uniscoLogo__ptr from "@/assets/unisco-logo.png.asset.json";
+import twoLogo__ptr from "@/assets/two-logo.png.asset.json";
 
-const tccLogo = tccLogoAsset.url;
-const tdosLogo = tdosLogoAsset.url;
-const nxtlevvelLogo = nxtlevvelLogoAsset.url;
-const telcoLogo = telcoLogoAsset.url;
-const uniscoLogo = uniscoLogoAsset.url;
-const twoLogo = twoLogoAsset.url;
+const tccLogo = tccLogo__ptr.url;
+const tdosLogo = tdosLogo__ptr.url;
+const nxtlevvelLogo = nxtlevvelLogo__ptr.url;
+const telcoLogo = telcoLogo__ptr.url;
+const uniscoLogo = uniscoLogo__ptr.url;
+const twoLogo = twoLogo__ptr.url;
 
 /**
  * Brand marks for the group companies.

@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CompanyLayout } from "@/components/site/CompanyLayout";
 import { useLang } from "@/contexts/language";
-import heroImgAsset from "@/assets/electrical.jpg.asset.json";
+import heroImg__ptr from "@/assets/electrical.jpg.asset.json";
 
-const heroImg = heroImgAsset.url;
+const heroImg = heroImg__ptr.url;
 
 export const Route = createFileRoute("/telco")({
   head: () => ({

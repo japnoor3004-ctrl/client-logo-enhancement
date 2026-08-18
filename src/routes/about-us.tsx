@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heritageImgAsset from "@/assets/hero-site.jpg.asset.json";
+import heritageImg__ptr from "@/assets/hero-site.jpg.asset.json";
 
 import { useLang } from "@/contexts/language";
 import { PageHero } from "@/components/site/PageHero";
@@ -16,7 +16,7 @@ import { ShieldCheck } from "lucide-react";
 import ScrollStack, { ScrollStackItem } from "@/components/site/ScrollStack";
 import { ArrowRight } from "lucide-react";
 
-const heritageImg = heritageImgAsset.url;
+const heritageImg = heritageImg__ptr.url;
 
 export const Route = createFileRoute("/about-us")({
   head: () => ({

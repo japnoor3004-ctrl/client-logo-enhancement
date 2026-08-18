@@ -1,7 +1,7 @@
 import { useLang } from "@/contexts/language";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
-import heroImgAsset from "@/assets/construction.jpg.asset.json";
+import heroImg__ptr from "@/assets/construction.jpg.asset.json";
 import DotField from "@/components/site/DotField";
 import HseGallery from "@/components/site/HseGallery";
 
@@ -17,7 +17,7 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
-const heroImg = heroImgAsset.url;
+const heroImg = heroImg__ptr.url;
 
 export const Route = createFileRoute("/hse")({
   head: () => ({

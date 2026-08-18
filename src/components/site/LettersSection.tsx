@@ -4,19 +4,19 @@ import { useLang } from "@/contexts/language";
 import { useReveal } from "@/hooks/use-reveal";
 import { ImageLightbox, type LightboxItem } from "./ImageLightbox";
 
-import canadianOrderAsset from "@/assets/press/towell-canadian-order.jpg.asset.json";
-import uniscoSmelterAsset from "@/assets/press/unisco-smelter-contract.jpg.asset.json";
-import abgPipelineAsset from "@/assets/press/abg-water-pipeline.jpg.asset.json";
-import abgCityAsset from "@/assets/press/towell-pumps-abg-city.jpg.asset.json";
-import tipcoHandoverAsset from "@/assets/press/tipco-project-handover.jpg.asset.json";
-import dossierAwardsAsset from "@/assets/press/dossier-awards-2015.jpg.asset.json";
+import canadianOrder__ptr from "@/assets/press/towell-canadian-order.jpg.asset.json";
+import uniscoSmelter__ptr from "@/assets/press/unisco-smelter-contract.jpg.asset.json";
+import abgPipeline__ptr from "@/assets/press/abg-water-pipeline.jpg.asset.json";
+import abgCity__ptr from "@/assets/press/towell-pumps-abg-city.jpg.asset.json";
+import tipcoHandover__ptr from "@/assets/press/tipco-project-handover.jpg.asset.json";
+import dossierAwards__ptr from "@/assets/press/dossier-awards-2015.jpg.asset.json";
 
-const canadianOrder = canadianOrderAsset.url;
-const uniscoSmelter = uniscoSmelterAsset.url;
-const abgPipeline = abgPipelineAsset.url;
-const abgCity = abgCityAsset.url;
-const tipcoHandover = tipcoHandoverAsset.url;
-const dossierAwards = dossierAwardsAsset.url;
+const canadianOrder = canadianOrder__ptr.url;
+const uniscoSmelter = uniscoSmelter__ptr.url;
+const abgPipeline = abgPipeline__ptr.url;
+const abgCity = abgCity__ptr.url;
+const tipcoHandover = tipcoHandover__ptr.url;
+const dossierAwards = dossierAwards__ptr.url;
 
 /**
  * Letters, press clippings and communications supplied as image documents.

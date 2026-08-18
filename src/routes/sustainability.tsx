@@ -5,19 +5,19 @@ import { useLang } from "@/contexts/language";
 import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
-import waterPlantAsset from "@/assets/water-plant.jpg.asset.json";
-import barkaAsset from "@/assets/barka-swro-rack1.jpg.asset.json";
-import liwaIrrigationAsset from "@/assets/liwa-irrigation.jpg.asset.json";
-import liwaReservoirAsset from "@/assets/liwa-reservoir.jpg.asset.json";
-import mudhaibiWaterAsset from "@/assets/mudhaibi-water.jpg.asset.json";
-import soharAsset from "@/assets/sohar-plant.jpg.asset.json";
+import waterPlant__ptr from "@/assets/water-plant.jpg.asset.json";
+import barka__ptr from "@/assets/barka-swro-rack1.jpg.asset.json";
+import liwaIrrigation__ptr from "@/assets/liwa-irrigation.jpg.asset.json";
+import liwaReservoir__ptr from "@/assets/liwa-reservoir.jpg.asset.json";
+import mudhaibiWater__ptr from "@/assets/mudhaibi-water.jpg.asset.json";
+import sohar__ptr from "@/assets/sohar-plant.jpg.asset.json";
 
-const waterPlant = waterPlantAsset.url;
-const barka = barkaAsset.url;
-const liwaIrrigation = liwaIrrigationAsset.url;
-const liwaReservoir = liwaReservoirAsset.url;
-const mudhaibiWater = mudhaibiWaterAsset.url;
-const sohar = soharAsset.url;
+const waterPlant = waterPlant__ptr.url;
+const barka = barka__ptr.url;
+const liwaIrrigation = liwaIrrigation__ptr.url;
+const liwaReservoir = liwaReservoir__ptr.url;
+const mudhaibiWater = mudhaibiWater__ptr.url;
+const sohar = sohar__ptr.url;
 
 export const Route = createFileRoute("/sustainability")({
   head: () => ({
