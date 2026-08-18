@@ -6,8 +6,6 @@ import DotField from "@/components/site/DotField";
 import HseGallery from "@/components/site/HseGallery";
 
 import {
-
-const heroImg = heroImgAsset.url;
   ShieldCheck,
   HeartPulse,
   Leaf,
@@ -18,6 +16,8 @@ const heroImg = heroImgAsset.url;
   Recycle,
   BadgeCheck,
 } from "lucide-react";
+
+const heroImg = heroImgAsset.url;
 
 export const Route = createFileRoute("/hse")({
   head: () => ({
