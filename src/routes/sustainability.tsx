@@ -6,17 +6,16 @@ import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
 import waterPlant__ptr from "@/assets/water-plant.jpg.asset.json";
-import barka__ptr from "@/assets/barka-swro-rack1.jpg.asset.json";
-import liwaIrrigation__ptr from "@/assets/liwa-irrigation.jpg.asset.json";
-import liwaReservoir__ptr from "@/assets/liwa-reservoir.jpg.asset.json";
-import mudhaibiWater__ptr from "@/assets/mudhaibi-water.jpg.asset.json";
-import sohar__ptr from "@/assets/sohar-plant.jpg.asset.json";
-
 const waterPlant = waterPlant__ptr.url;
+import barka__ptr from "@/assets/barka-swro-rack1.jpg.asset.json";
 const barka = barka__ptr.url;
+import liwaIrrigation__ptr from "@/assets/liwa-irrigation.jpg.asset.json";
 const liwaIrrigation = liwaIrrigation__ptr.url;
+import liwaReservoir__ptr from "@/assets/liwa-reservoir.jpg.asset.json";
 const liwaReservoir = liwaReservoir__ptr.url;
+import mudhaibiWater__ptr from "@/assets/mudhaibi-water.jpg.asset.json";
 const mudhaibiWater = mudhaibiWater__ptr.url;
+import sohar__ptr from "@/assets/sohar-plant.jpg.asset.json";
 const sohar = sohar__ptr.url;
 
 export const Route = createFileRoute("/sustainability")({

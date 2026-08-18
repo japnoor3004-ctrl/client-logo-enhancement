@@ -6,17 +6,16 @@ import { PageHero } from "@/components/site/PageHero";
 import { ContentPlaceholder } from "@/components/site/ContentPlaceholder";
 
 import teamImg__ptr from "@/assets/mudhaibi-team.jpg.asset.json";
-import careersImg__ptr from "@/assets/careers.jpg.asset.json";
-import hse1__ptr from "@/assets/hse/hse-1.jpg.asset.json";
-import hse4__ptr from "@/assets/hse/hse-4.jpg.asset.json";
-import hse7__ptr from "@/assets/hse/hse-7.jpg.asset.json";
-import hse11__ptr from "@/assets/hse/hse-11.jpg.asset.json";
-
 const teamImg = teamImg__ptr.url;
+import careersImg__ptr from "@/assets/careers.jpg.asset.json";
 const careersImg = careersImg__ptr.url;
+import hse1__ptr from "@/assets/hse/hse-1.jpg.asset.json";
 const hse1 = hse1__ptr.url;
+import hse4__ptr from "@/assets/hse/hse-4.jpg.asset.json";
 const hse4 = hse4__ptr.url;
+import hse7__ptr from "@/assets/hse/hse-7.jpg.asset.json";
 const hse7 = hse7__ptr.url;
+import hse11__ptr from "@/assets/hse/hse-11.jpg.asset.json";
 const hse11 = hse11__ptr.url;
 
 export const Route = createFileRoute("/people-at-teg")({

@@ -5,17 +5,16 @@ import { useReveal } from "@/hooks/use-reveal";
 import { ImageLightbox, type LightboxItem } from "./ImageLightbox";
 
 import canadianOrder__ptr from "@/assets/press/towell-canadian-order.jpg.asset.json";
-import uniscoSmelter__ptr from "@/assets/press/unisco-smelter-contract.jpg.asset.json";
-import abgPipeline__ptr from "@/assets/press/abg-water-pipeline.jpg.asset.json";
-import abgCity__ptr from "@/assets/press/towell-pumps-abg-city.jpg.asset.json";
-import tipcoHandover__ptr from "@/assets/press/tipco-project-handover.jpg.asset.json";
-import dossierAwards__ptr from "@/assets/press/dossier-awards-2015.jpg.asset.json";
-
 const canadianOrder = canadianOrder__ptr.url;
+import uniscoSmelter__ptr from "@/assets/press/unisco-smelter-contract.jpg.asset.json";
 const uniscoSmelter = uniscoSmelter__ptr.url;
+import abgPipeline__ptr from "@/assets/press/abg-water-pipeline.jpg.asset.json";
 const abgPipeline = abgPipeline__ptr.url;
+import abgCity__ptr from "@/assets/press/towell-pumps-abg-city.jpg.asset.json";
 const abgCity = abgCity__ptr.url;
+import tipcoHandover__ptr from "@/assets/press/tipco-project-handover.jpg.asset.json";
 const tipcoHandover = tipcoHandover__ptr.url;
+import dossierAwards__ptr from "@/assets/press/dossier-awards-2015.jpg.asset.json";
 const dossierAwards = dossierAwards__ptr.url;
 
 /**

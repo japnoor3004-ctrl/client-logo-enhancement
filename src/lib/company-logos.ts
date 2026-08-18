@@ -1,15 +1,14 @@
 import tccLogo__ptr from "@/assets/tcc-logo.png.asset.json";
-import tdosLogo__ptr from "@/assets/tdos-logo.png.asset.json";
-import nxtlevvelLogo__ptr from "@/assets/nxtlevvel-logo.png.asset.json";
-import telcoLogo__ptr from "@/assets/telco-logo.png.asset.json";
-import uniscoLogo__ptr from "@/assets/unisco-logo.png.asset.json";
-import twoLogo__ptr from "@/assets/two-logo.png.asset.json";
-
 const tccLogo = tccLogo__ptr.url;
+import tdosLogo__ptr from "@/assets/tdos-logo.png.asset.json";
 const tdosLogo = tdosLogo__ptr.url;
+import nxtlevvelLogo__ptr from "@/assets/nxtlevvel-logo.png.asset.json";
 const nxtlevvelLogo = nxtlevvelLogo__ptr.url;
+import telcoLogo__ptr from "@/assets/telco-logo.png.asset.json";
 const telcoLogo = telcoLogo__ptr.url;
+import uniscoLogo__ptr from "@/assets/unisco-logo.png.asset.json";
 const uniscoLogo = uniscoLogo__ptr.url;
+import twoLogo__ptr from "@/assets/two-logo.png.asset.json";
 const twoLogo = twoLogo__ptr.url;
 
 /**

@@ -3,7 +3,6 @@ import { PageHero } from "@/components/site/PageHero";
 import { CompanyLayout } from "@/components/site/CompanyLayout";
 import { useLang } from "@/contexts/language";
 import heroImg__ptr from "@/assets/pipeline.jpg.asset.json";
-
 const heroImg = heroImg__ptr.url;
 
 export const Route = createFileRoute("/tdos")({

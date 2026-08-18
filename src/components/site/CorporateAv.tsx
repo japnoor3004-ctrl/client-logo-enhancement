@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Play, X } from "lucide-react";
 import { useLang } from "@/contexts/language";
 import posterImg__ptr from "@/assets/hero-site.jpg.asset.json";
-
 const posterImg = posterImg__ptr.url;
 
 /**

@@ -27,26 +27,25 @@ import SplitText from "@/components/site/SplitText";
 // Hero background uses GridMotion with the bundled project photography.
 
 import heroSite__ptr from "@/assets/hero-site.jpg.asset.json";
+const heroSite = heroSite__ptr.url;
 import construction__ptr from "@/assets/construction.jpg.asset.json";
+const construction = construction__ptr.url;
 import refinery__ptr from "@/assets/refinery.jpg.asset.json";
+const refinery = refinery__ptr.url;
 import fabrication__ptr from "@/assets/fabrication.jpg.asset.json";
+const fabrication = fabrication__ptr.url;
 import fabrication2__ptr from "@/assets/fabrication2.jpg.asset.json";
+const fabrication2 = fabrication2__ptr.url;
 import pipeline__ptr from "@/assets/pipeline.jpg.asset.json";
+const pipeline = pipeline__ptr.url;
 import electrical__ptr from "@/assets/electrical.jpg.asset.json";
+const electrical = electrical__ptr.url;
 import waterPlant__ptr from "@/assets/water-plant.jpg.asset.json";
+const waterPlant = waterPlant__ptr.url;
 
 import GridMotion from "@/components/site/GridMotion";
 import DotField from "@/components/site/DotField";
 import { StatStrip } from "@/components/site/StatStrip";
-
-const heroSite = heroSite__ptr.url;
-const construction = construction__ptr.url;
-const refinery = refinery__ptr.url;
-const fabrication = fabrication__ptr.url;
-const fabrication2 = fabrication2__ptr.url;
-const pipeline = pipeline__ptr.url;
-const electrical = electrical__ptr.url;
-const waterPlant = waterPlant__ptr.url;
 
 // ─── GridMotion hero tiles ───
 // Real Towell project photography (bundled assets, hashed + cached by Vite).
